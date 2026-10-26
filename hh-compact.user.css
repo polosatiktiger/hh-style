@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           hh.ru — компактная выдача
 @namespace      hh-compact
-@version        3.1.0
+@version        3.1.1
 @description    Компактная карточка вакансии: название → зарплата, опыт, компания, метро → описание → «Откликнуться»
 @author         Evgeny
 @preprocessor   default
@@ -88,7 +88,7 @@
   article[data-qa="vacancy-serp__vacancy"] [data-qa="serp-item__title"] [class*="typography-title"] {
     font-size: var(--hhcTitle, 15px) !important;
     line-height: 1.3 !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;  /* у hh sans есть 400/500/700: 600 рисуется как 700 */
   }
   article[data-qa="vacancy-serp__vacancy"] [class*="actions-container"] {
     order: 2;
@@ -110,7 +110,7 @@
   article[data-qa="vacancy-serp__vacancy"] [class*="typography-label-1"] {
     font-size: 14px !important;
     line-height: 20px !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
   }
   /* плашки: опыт, «Можно удалённо», «Можно без резюме» */
   article[data-qa="vacancy-serp__vacancy"] [class*="magritte-tag___"] {
